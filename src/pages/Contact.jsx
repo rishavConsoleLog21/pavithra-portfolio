@@ -1,10 +1,19 @@
-import React, { useRef, useState } from "react";
+import React, { Suspense, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Canvas } from "@react-three/fiber";
+
+import Girl from "../models/Girl";
+import Loader from "../components/Loader";
+import useAlert from "../hooks/useAlert";
+import Alert from "../components/Alert";
 
 const Contact = () => {
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [isLoading, setIsLoading] = useState(false);
+  const [currentAnimation, setCurrentAnimation] = useState("Idle");
+
+  const {alert, showAlert, hideAlert} = useAlert();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -13,6 +22,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
+    setCurrentAnimation("Clapping");
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -21,30 +31,47 @@ const Contact = () => {
           form_name: form.name,
           to_name: "Pavithra CR",
           form_email: form.email,
-          to_email: "kumarrishavcool21@gmail.com",
+          to_email: "pavithracr11112001@gmail.com",
           form_message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
         setIsLoading(false);
-        // Show success message
-        // Hide an alert
-        setForm({ name: "", email: "", message: "" });
+        showAlert({
+          show: true,
+          text: "Your message has been sent successfully. I will get back to you soon.",
+          type: "success",
+        });
+        setTimeout(() => {
+          hideAlert(false);
+          setCurrentAnimation("Idle");
+          setForm({ name: "", email: "", message: "" });
+        }, 3000);
       })
       .catch((err) => {
         setIsLoading(false);
+        setCurrentAnimation("Idle");
         console.log(err);
-        // Show error message
+        showAlert({
+          show: true,
+          text: "Something went wrong. Please try again later.",
+          type: "danger",
+        });
       });
   };
 
-  const handleFocus = (e) => {};
+  const handleFocus = () => {
+    setCurrentAnimation("Walk");
+  };
 
-  const handleBlur = (e) => {};
+  const handleBlur = () => {
+    setCurrentAnimation("Surprise");
+  };
 
   return (
     <section className="relative flex lg:flex-row flex-col max-container">
+      {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w[50%] flex flex-col">
         <h1 className="head-text">Get in touch with me.</h1>
         <form
@@ -105,6 +132,20 @@ const Contact = () => {
             {isLoading ? "Sending..." : "Send Message"}
           </button>
         </form>
+      </div>
+      <div className="lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]">
+        <Canvas camera={{ position: [0, 0, 5], fov: 75, near: 0.1, far: 1000 }}>
+          <directionalLight intensity={2.5} position={[0, 0, 1]} />
+          <ambientLight intensity={0.75} />
+          <Suspense fallback={<Loader />}>
+            <Girl
+              currentAnimation={currentAnimation}
+              position={[0, -1.8, 2]}
+              rotation={[12.6, -0.1, 0]}
+              scale={[1.5, 1.5, 1.5]}
+            />
+          </Suspense>
+        </Canvas>
       </div>
     </section>
   );
