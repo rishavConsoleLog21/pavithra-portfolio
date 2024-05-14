@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla, icsolution, emertxe } from "../assets/images";
+import { icsolution, emertxe } from "../assets/images";
 import {
   car,
   contact,
@@ -9,7 +9,6 @@ import {
   html,
   javascript,
   linkedin,
-  pricewise,
   snapgram,
   summiz,
   threads,
@@ -22,6 +21,7 @@ import arduino from "../assets/icons/arduino.svg";
 import raspberryPi from "../assets/icons/raspberryPi.svg";
 import ds from "../assets/icons/ds.svg";
 import algo from "../assets/icons/algorithm.svg";
+import asm from "../assets/icons/asm.svg";
 
 export const skills = [
   {
@@ -48,6 +48,11 @@ export const skills = [
     imageUrl: raspberryPi,
     name: "Raspberry Pi",
     type: "Mini Computer",
+  },
+  {
+    imageUrl: asm,
+    name: "Assembly Language",
+    type: "Programming Language",
   },
   {
     imageUrl: ds,
@@ -135,51 +140,43 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: pricewise,
+    iconUrl: estate,
     theme: "btn-back-red",
-    name: "Amazon Price Tracker",
+    name: "Home Automation using 8051",
     description:
-      "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-    link: "https://github.com/adrianhajdin/pricewise",
+      "Home automation system using 8051 microcontroller and various sensors to control home appliances.The system can be controlled using a mobile app.",
+    link: "https://github.com/pavithracr1111",
   },
   {
     iconUrl: threads,
     theme: "btn-back-green",
-    name: "Full Stack Threads Clone",
+    name: "Garbage Level Monitoring System using Raspberry Pi",
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: "https://github.com/adrianhajdin/threads",
+      "Garbage level monitoring system using Raspberry Pi and ultrasonic sensors to monitor the garbage level in dustbins and send alerts to the authorities when the dustbin is full.",
+    link: "https://github.com/pavithracr1111",
   },
   {
     iconUrl: car,
-    theme: "btn-back-blue",
-    name: "Car Finding App",
+    theme: "btn-back-green",
+    name: "Smart Parking System using 8051 & Arduino",
     description:
-      "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
-    link: "https://github.com/adrianhajdin/project_next13_car_showcase",
-  },
-  {
-    iconUrl: snapgram,
-    theme: "btn-back-pink",
-    name: "Full Stack Instagram Clone",
-    description:
-      "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-    link: "https://github.com/adrianhajdin/social_media_app",
-  },
-  {
-    iconUrl: estate,
-    theme: "btn-back-black",
-    name: "Real-Estate Application",
-    description:
-      "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
-    link: "https://github.com/adrianhajdin/projects_realestate",
+      "Smart parking system using 8051 microcontroller and Arduino to monitor the parking slots and book the slots using a web app.",
+    link: "https://github.com/rishavConsoleLog21/Smart-EV-Charging-Parking-Station",
   },
   {
     iconUrl: summiz,
-    theme: "btn-back-yellow",
-    name: "AI Summarizer Application",
+    theme: "btn-back-green",
+    name: "MP3 Details",
     description:
-      "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-    link: "https://github.com/adrianhajdin/project_ai_summarizer",
+      "Embedded system to display the details of the MP3 file using 8051 microcontroller and LCD display. The system can display the title, artist, album, and duration of the MP3 file.",
+    link: "https://github.com/pavithracr1111",
+  },
+  {
+    iconUrl: snapgram,
+    theme: "btn-back-green",
+    name: "Event Web App",
+    description:
+      "Web app to manage events and send invites to the users. The app is built using HTML, CSS, and JavaScript. The app has features like creating events, sending invites, and managing the events.",
+    link: "https://github.com/pavithracr1111/Internship-Project",
   },
 ];
