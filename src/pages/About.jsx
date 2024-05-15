@@ -8,10 +8,12 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { skills, experiences, achievements } from "../constants";
 import CTA from "../components/CTA";
+import ScrollProgressBar from "../components/ScrollProgressBar";
 
 const About = () => {
   return (
     <section className="max-container">
+      <ScrollProgressBar />
       <h1 className="head-text">
         Hello, I'm{" "}
         <span className="pink-gradient_text font-semibold drop-shadow">
