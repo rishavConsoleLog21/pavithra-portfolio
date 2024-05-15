@@ -1,4 +1,4 @@
-import { icsolution, emertxe } from "../assets/images";
+import { icsolution, emertxe, HackerRank } from "../assets/images";
 import {
   car,
   contact,
@@ -12,16 +12,16 @@ import {
   snapgram,
   summiz,
   threads,
+  bash,
+  cprogramming,
+  cpp,
+  linux,
+  arduino,
+  raspberryPi,
+  ds,
+  algo,
+  asm
 } from "../assets/icons";
-
-import cprogramming from "../assets/icons/cprogramming.svg";
-import cpp from "../assets/icons/cpp.svg";
-import linux from "../assets/icons/linux.svg";
-import arduino from "../assets/icons/arduino.svg";
-import raspberryPi from "../assets/icons/raspberryPi.svg";
-import ds from "../assets/icons/ds.svg";
-import algo from "../assets/icons/algorithm.svg";
-import asm from "../assets/icons/asm.svg";
 
 export const skills = [
   {
@@ -38,6 +38,11 @@ export const skills = [
     imageUrl: linux,
     name: "Linux",
     type: "Operating System",
+  },
+  {
+    imageUrl: bash,
+    name: "Bash Scripting",
+    type: "Scripting Language",
   },
   {
     imageUrl: arduino,
@@ -93,11 +98,11 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Embedded Software Intern",
+    title: "Apprentice - Embedded Software Intern",
     company_name: "Emertex",
     icon: emertxe,
     iconBg: "#fbc3bc",
-    date: "Nov 2023 - June 2024",
+    date: "Jan 2024 - July 2024",
     points: [
       "Developed firmware for embedded systems using C and C++.",
       "Worked on linux systems to develop device drivers and kernel modules.",
@@ -110,12 +115,37 @@ export const experiences = [
     company_name: "IC Solution",
     icon: icsolution,
     iconBg: "#accbe1",
-    date: "Sept 2022 - Oct 2022",
+    date: "Aug 2022 - Sep 2022",
     points: [
       "Developed and maintained websites for clients using HTML, CSS, and JavaScript.",
       "Collaborated with designers to create responsive web designs.",
       "Optimized websites for speed and performance.",
       "Conducted code reviews and provided feedback to other developers.",
+    ],
+  },
+];
+
+export const achievements = [
+  {
+    title: "Student Spot Award - C Programming Module",
+    company_name: "Emertex",
+    icon: emertxe,
+    iconBg: "#fbc3bc",
+    date: "14 May 2024",
+    points: [
+      "Awarded for outstanding performance and excellence",
+      "in the C programming module as part of the professional certification program.",
+    ],
+  },
+  {
+    title: "4-star silver badge in C Programming",
+    company_name: "HackerRank",
+    icon: HackerRank,
+    iconBg: "#accbe1",
+    date: "May 2024",
+    points: [
+      "Awarded for solving problems in C programming.",
+      "The badge is awarded for solving problems in the C programming language.",
     ],
   },
 ];
@@ -140,6 +170,14 @@ export const socialLinks = [
 
 export const projects = [
   {
+    iconUrl: summiz,
+    theme: "btn-back-green",
+    name: "LSB of Steganography",
+    description:
+      "LSB Image Steganography is a C command-line application enabling seamless embedding of text messages into bitmap (.bmp) images using LSB steganography. Users can encrypt and decrypt messages, validate message and image size compatibility, and optionally include a magic string for identification.",
+    link: "https://github.com/pavithracr1111/Pavithra_C_R___STEGO_Project",
+  },
+  {
     iconUrl: estate,
     theme: "btn-back-red",
     name: "Home Automation using 8051",
@@ -162,14 +200,6 @@ export const projects = [
     description:
       "Smart parking system using 8051 microcontroller and Arduino to monitor the parking slots and book the slots using a web app.",
     link: "https://github.com/rishavConsoleLog21/Smart-EV-Charging-Parking-Station",
-  },
-  {
-    iconUrl: summiz,
-    theme: "btn-back-green",
-    name: "LSB of Steganography",
-    description:
-      "LSB Image Steganography is a C command-line application enabling seamless embedding of text messages into bitmap (.bmp) images using LSB steganography. Users can encrypt and decrypt messages, validate message and image size compatibility, and optionally include a magic string for identification.",
-    link: "https://github.com/pavithracr1111/Pavithra_C_R___STEGO_Project",
   },
   {
     iconUrl: snapgram,
