@@ -129,12 +129,12 @@ export const socialLinks = [
   {
     name: "GitHub",
     iconUrl: github,
-    link: "https://github.com/YourGitHubUsername",
+    link: "https://github.com/pavithracr1111",
   },
   {
     name: "LinkedIn",
     iconUrl: linkedin,
-    link: "https://www.linkedin.com/in/YourLinkedInUsername",
+    link: "https://www.linkedin.com/in/pavithracr1111/",
   },
 ];
 
@@ -166,10 +166,10 @@ export const projects = [
   {
     iconUrl: summiz,
     theme: "btn-back-green",
-    name: "MP3 Details",
+    name: "LSB of Steganography",
     description:
-      "Embedded system to display the details of the MP3 file using 8051 microcontroller and LCD display. The system can display the title, artist, album, and duration of the MP3 file.",
-    link: "https://github.com/pavithracr1111",
+      "LSB Image Steganography is a C command-line application enabling seamless embedding of text messages into bitmap (.bmp) images using LSB steganography. Users can encrypt and decrypt messages, validate message and image size compatibility, and optionally include a magic string for identification.",
+    link: "https://github.com/pavithracr1111/Pavithra_C_R___STEGO_Project",
   },
   {
     iconUrl: snapgram,
