@@ -196,7 +196,7 @@ export const projects = [
   {
     iconUrl: car,
     theme: "btn-back-green",
-    name: "Smart Parking System using 8051 & Arduino",
+    name: "Smart EV Charging and Parking Using Embedded Systems",
     description:
       "Smart parking system using 8051 microcontroller and Arduino to monitor the parking slots and book the slots using a web app.",
     link: "https://github.com/rishavConsoleLog21/Smart-EV-Charging-Parking-Station",

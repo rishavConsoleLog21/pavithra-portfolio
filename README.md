@@ -10,7 +10,8 @@ To build this portfolio, I used the following packages:
 - [React Router](https://reactrouter.com/): A routing library for React applications.
 - [EmailJS](https://www.emailjs.com/): A library to recieve emails from user
 - [React-three-fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction): A library for 3d Animation in web app
--[TailwindCSS](https://tailwindcss.com/): A library for CSS
+- [TailwindCSS](https://tailwindcss.com/): A library for CSS
+- [NodeJS](https://nodejs.org/): JS runtime environment 
 
 ## Getting Started
 
@@ -26,4 +27,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-If you have any questions or feedback, feel free to reach out to me at [your-email@example.com](mailto:your-email@example.com).
+If you have any questions or feedback, feel free to reach out to me at [my-kumarrishavcool21@gmail.com](mailto:kumarrishavcool21@gmail.com).
