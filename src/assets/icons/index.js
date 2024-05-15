@@ -15,6 +15,16 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import bash from './bash.svg'
+import cprogramming from './cprogramming.svg'
+import cpp from './cpp.svg'
+import linux from './linux.svg'
+import arduino from './arduino.svg'
+import raspberryPi from './raspberryPi.svg'
+import ds from './ds.svg'
+import algo from './algorithm.svg'
+import asm from './asm.svg'
+
 
 export {
     css,
@@ -33,5 +43,14 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    bash,
+    cprogramming,
+    cpp,
+    linux,
+    arduino,
+    raspberryPi,
+    ds,
+    algo,
+    asm
 }
