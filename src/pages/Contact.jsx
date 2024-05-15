@@ -73,7 +73,9 @@ const Contact = () => {
     <section className="relative flex lg:flex-row flex-col max-container h-[100vh]">
       {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w[50%] flex flex-col">
-        <h1 className="head-text">Get in touch with me.</h1>
+        <h1 className="head-text">Get in touch
+          <span className="pink-gradient_text drop-shadow font-semibold"> with me</span>
+        </h1>
         <form
           className="w-full flex flex-col gap-7 mt-14"
           onSubmit={handleSubmit}

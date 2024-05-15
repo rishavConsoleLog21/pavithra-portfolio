@@ -6,9 +6,13 @@ const Navbar = () => {
     <header className="header">
       <NavLink
         to="/"
-        className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
+        className={({ isActive }) =>
+          isActive
+            ? "w-10 h-10 rounded-lg items-center justify-center flex font-bold shadow-md bg-gradient-to-r from-blue-100 to-blue-200"
+            : "w-10 h-10 rounded-lg items-center justify-center flex font-bold shadow-md bg-white"
+        }
       >
-        <p className="pink-gradient_text">Hi</p>
+        <p className="pink-gradient_text">Pavi</p>
       </NavLink>
       <nav className="flex text-lg gap-7 font-medium">
         <NavLink
