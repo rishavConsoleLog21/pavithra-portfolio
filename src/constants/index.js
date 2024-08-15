@@ -197,7 +197,7 @@ export const projects = [
     theme: "btn-back-red",
     name: "Car black box",
     description:"Designed & developed Car Black Box system to log critical vehicle data such as speed, engine temperature, and gear shifts. Implemented real-time event capture, password-protected access, and data retrieval using embedded C and I2C protocol.",
-    link: "https://github.com/pavithracr1111/Pavithra_C_R___STEGO_Project",
+    link: "https://github.com/pavithracr1111/Car_Black_Box",
   },
   {
     iconUrl: summiz,
