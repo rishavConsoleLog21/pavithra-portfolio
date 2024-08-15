@@ -20,7 +20,7 @@ import {
   raspberryPi,
   ds,
   algo,
-  asm
+  asm,
 } from "../assets/icons";
 
 export const skills = [
@@ -127,14 +127,23 @@ export const experiences = [
 
 export const achievements = [
   {
+    title: "Student Spot Award - DSA Module",
+    company_name: "Emertex",
+    icon: emertxe,
+    iconBg: "#fbc3bc",
+    date: "25 June 2024",
+    points: [
+      "Awarded for outstanding performance and excellence in the DSA module as part of the professional certification program.",
+    ],
+  },
+  {
     title: "Student Spot Award - C Programming Module",
     company_name: "Emertex",
     icon: emertxe,
     iconBg: "#fbc3bc",
     date: "14 May 2024",
     points: [
-      "Awarded for outstanding performance and excellence",
-      "in the C programming module as part of the professional certification program.",
+      "Awarded for outstanding performance and excellence in the C programming module as part of the professional certification program.",
     ],
   },
   {
@@ -154,7 +163,7 @@ export const socialLinks = [
   {
     name: "Contact",
     iconUrl: contact,
-    link: "/contact",
+    link: "https://mail.google.com/mail/u/1/#inbox?compose=new",
   },
   {
     name: "GitHub",
@@ -169,6 +178,27 @@ export const socialLinks = [
 ];
 
 export const projects = [
+  {
+    iconUrl: estate,
+    theme: "btn-back-red",
+    name: "Lexical Analysis",
+    description:"The project aims to create a lexical analyzer that reads a .c file and generates a sequence of tokens. These tokens are used in the next stage of compilation for further processing, like syntax analysis",
+    link: "https://github.com/pavithracr1111/Lexcial-analyser",
+  },
+  {
+    iconUrl: threads,
+    theme: "btn-back-green",
+    name: "MP3 tag reader & editor",
+    description:"The project will be useful to individuals who wish to view and collect mp3 tag data. This project can be extended to implement a tag editor, where in users can modify mp3 tag information.",
+    link: "https://github.com/pavithracr1111/Pavithra_C_R___MP3_TAG_READER",
+  },
+  {
+    iconUrl: car,
+    theme: "btn-back-red",
+    name: "Car black box",
+    description:"Designed & developed Car Black Box system to log critical vehicle data such as speed, engine temperature, and gear shifts. Implemented real-time event capture, password-protected access, and data retrieval using embedded C and I2C protocol.",
+    link: "https://github.com/pavithracr1111/Pavithra_C_R___STEGO_Project",
+  },
   {
     iconUrl: summiz,
     theme: "btn-back-green",
@@ -195,7 +225,7 @@ export const projects = [
   },
   {
     iconUrl: car,
-    theme: "btn-back-green",
+    theme: "btn-back-red",
     name: "Smart EV Charging and Parking Using Embedded Systems",
     description:
       "Smart parking system using 8051 microcontroller and Arduino to monitor the parking slots and book the slots using a web app.",
@@ -208,5 +238,13 @@ export const projects = [
     description:
       "Web app to manage events and send invites to the users. The app is built using HTML, CSS, and JavaScript. The app has features like creating events, sending invites, and managing the events.",
     link: "https://github.com/pavithracr1111/Internship-Project",
+  },
+  {
+    iconUrl: estate,
+    theme: "btn-back-red",
+    name: "Inverted Search",
+    description:
+      "Designing and understanding inverted indexing and adding words or numbers to database. Also backing up data from the existing backups file. Updating the existing backup file.",
+    link: "https://github.com/pavithracr1111/DSA-Project-Inverted_indexing",
   },
 ];
