@@ -9,8 +9,18 @@ const Footer = () => {
 
       <div className="footer-container">
         <p>
-          © 2024 <strong className="pink-gradient_text">Pavithra CR</strong>.
+          Developed by
+          <strong className="pink-gradient_text">
+            <Link target="_blank" to="https://rishavkumar.live/">
+              {" "}
+              Rishav Kumar
+            </Link>
+          </strong>
+          .
+        </p>
+        <p>
           All rights reserved.
+          © 2024 <strong className="pink-gradient_text">Pavithra CR</strong>.
         </p>
 
         <div className="flex gap-3 justify-center items-center">

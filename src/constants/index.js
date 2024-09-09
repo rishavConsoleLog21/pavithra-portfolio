@@ -127,6 +127,16 @@ export const experiences = [
 
 export const achievements = [
   {
+    title: "Student Spot Award - Microcontroller Module",
+    company_name: "Emertex",
+    icon: emertxe,
+    iconBg: "#fbc3bc",
+    date: "09 Sept 2024",
+    points: [
+      "Awarded for outstanding performance and excellence in the Microcontroller module as part of the professional certification program.",
+    ],
+  },
+  {
     title: "Student Spot Award - DSA Module",
     company_name: "Emertex",
     icon: emertxe,
@@ -182,21 +192,24 @@ export const projects = [
     iconUrl: estate,
     theme: "btn-back-red",
     name: "Lexical Analysis",
-    description:"The project aims to create a lexical analyzer that reads a .c file and generates a sequence of tokens. These tokens are used in the next stage of compilation for further processing, like syntax analysis",
+    description:
+      "The project aims to create a lexical analyzer that reads a .c file and generates a sequence of tokens. These tokens are used in the next stage of compilation for further processing, like syntax analysis",
     link: "https://github.com/pavithracr1111/Lexcial-analyser",
   },
   {
     iconUrl: threads,
     theme: "btn-back-green",
     name: "MP3 tag reader & editor",
-    description:"The project will be useful to individuals who wish to view and collect mp3 tag data. This project can be extended to implement a tag editor, where in users can modify mp3 tag information.",
+    description:
+      "The project will be useful to individuals who wish to view and collect mp3 tag data. This project can be extended to implement a tag editor, where in users can modify mp3 tag information.",
     link: "https://github.com/pavithracr1111/Pavithra_C_R___MP3_TAG_READER",
   },
   {
     iconUrl: car,
     theme: "btn-back-red",
     name: "Car black box",
-    description:"Designed & developed Car Black Box system to log critical vehicle data such as speed, engine temperature, and gear shifts. Implemented real-time event capture, password-protected access, and data retrieval using embedded C and I2C protocol.",
+    description:
+      "Designed & developed Car Black Box system to log critical vehicle data such as speed, engine temperature, and gear shifts. Implemented real-time event capture, password-protected access, and data retrieval using embedded C and I2C protocol.",
     link: "https://github.com/pavithracr1111/Car_Black_Box",
   },
   {
