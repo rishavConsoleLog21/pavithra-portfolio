@@ -11,7 +11,7 @@ const Footer = () => {
         <p>
           Developed by
           <strong className="pink-gradient_text">
-            <Link target="_blank" to="https://rishavkumar.live/">
+            <Link target="_blank" to="https://rishavconsolelog.works/">
               {" "}
               Rishav Kumar
             </Link>
